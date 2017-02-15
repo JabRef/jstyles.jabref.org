@@ -10,7 +10,7 @@ To use the styles below, make sure to download the linked `.jstyle` files direct
 
 The custom export format of JabRef is an alternative to the [Citation Style Language](http://citationstyles.org/), which is an XML-based format to describe bibliographic rendering.
 
-## Available files
+## Available Styles
 
 ### Brazilian Journal of Aquatic Science and Technology
 
@@ -71,6 +71,10 @@ This follows [Elsevier's guidelines for authors](https://www.elsevier.com/journa
 - ![preview](turabian-english.png)
 
 ## Example Styles
+
+### Example style file
+
+- File: [example_style_file.jstyle](example_style_file.jstyle)
 
 ### "Thesis", example style with numbered citations
 
