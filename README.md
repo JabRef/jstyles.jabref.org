@@ -26,19 +26,19 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 - Author: Jan Stelling
 - File: [American_Mineralogist.jstyle](American_Mineralogist.jstyle)
-- ![preview][American_Mineralogist.png]
+- ![preview](American_Mineralogist.png)
 
 ### Chemical Geology
 
 - Author: Jan Stelling
 - File: [Chemical_Geology.jstyle](Chemical_Geology.jstyle)
-- ![preview][Chemical_Geology.png]
+- ![preview](Chemical_Geology.png)
 
 ### Geochim. Cosmochim. Acta
 
 - Author: Jan Stelling
 - File: [Geochim_Cosmochim_Acta.jstyle](Geochim_Cosmochim_Acta.jstyle)
-- ![preview][Geochim_Cosmochim_Acta.png]
+- ![preview](Geochim_Cosmochim_Acta.png)
 
 ### Journal of Materials Chemistry
 
@@ -49,7 +49,7 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 - Author: Ted Carnevale
 - File: [J_of_Neurophysiology.jstyle](J_of_Neurophysiology.jstyle)
-- ![preview][J_of_Neurophysiology.png]
+- ![preview](J_of_Neurophysiology.png)
 
 ### Remote Sensing of Environment.
 
@@ -62,13 +62,13 @@ This follows [Elsevier's guidelines for authors](https://www.elsevier.com/journa
 
 - Author: Uwe Jochum
 - File: [turabian-deutsch.jstyle](turabian-deutsch.jstyle)
-- ![preview][turabian-deutsch.png]
+- ![preview](turabian-deutsch.png)
 
 ### Turabian (English)
 
 - Author: Uwe Jochum
 - File: [turabian-english.jstyle](turabian-english.jstyle)
-- ![preview][turabian-english.png]
+- ![preview](turabian-english.png)
 
 ## Example Styles
 
