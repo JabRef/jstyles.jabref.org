@@ -1,0 +1,40 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+
+NAME
+Steff custom style file for JABREF-oo plugin. Provided 'as-is'
+
+JOURNALS
+Advanced Materials
+Adv. Mater.
+
+PROPERTIES
+Title=References
+IsSortByPosition=true
+IsNumberEntries=true
+ReferenceParagraphFormat=Default
+ReferenceHeaderParagraphFormat=Heading 2
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=99
+AuthorSeparator=, 
+AuthorLastSeparator= & 
+EtAlString= et al.
+YearSeparator= 
+InTextYearSeparator= 
+BracketBefore=[
+BracketAfter=]
+BracketBeforeInList=[
+BracketAfterInList=]
+CitationSeparator=; 
+UniquefierSeparator=,
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=true
+SuperscriptCitations=true
+
+LAYOUT
+article=\format[AuthorAbbreviator, AuthorFirstFirst,AuthorAndsCommaReplacer]{\author}, <i>\journal</i>, <b>\year</b>, <i>\volume</i>, pg. \format[FormatPagesForHTML]{\pages}.
+
+default=\format[AuthorAbbreviator, AuthorFirstFirst,AuthorAndsReplacer]{\author}, <i>\journal</i>, <b>\year</b>, <i>\volume</i>,  pg. \format[FormatPagesForHTML]{\pages}.

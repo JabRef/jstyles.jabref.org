@@ -1,0 +1,48 @@
+NAME
+ChemGeol Author-year citation
+
+JOURNALS
+Chemical Geology
+
+PROPERTIES
+Title=References
+IsSortByPosition=false
+IsNumberEntries=false
+ReferenceParagraphFormat="Standard"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=2
+AuthorSeparator=, 
+AuthorLastSeparator= and 
+EtAlString= et al.
+YearSeparator=, 
+InTextYearSeparator= 
+BracketBefore=(
+BracketAfter=)
+BracketBeforeInList=[
+BracketAfterInList=]
+CitationSeparator=; 
+UniquefierSeparator=,
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=false
+ItalicCitations=false
+BoldCitations=false
+SuperscriptCitations=false
+SubscriptCitations=false
+
+
+LAYOUT
+article=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}, \format[FormatChars]{\year}\uniq. \format[FormatChars]{\title}. \journal \volume, \format[FormatPagesForHTML]{\pages}.
+
+book=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}\begin{editor}\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} (Ed.)\end{editor}, \year\uniq. <i>\format[FormatChars]{\title}</i>. \format[FormatChars]{\publisher}, \format[FormatChars]{\address}.
+
+incollection=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}, \year\uniq. <i>\format[FormatChars]{\title}</i>. In: \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} (Ed.), <i>\format[FormatChars]{\booktitle}</i>, \format[FormatChars]{\publisher}.
+
+inbook=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}, \year\uniq. <i>\format[FormatChars]{\chapter}</i>. In: \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} (Ed.), <i>\format[FormatChars]{\title}</i>, \format[FormatChars]{\publisher}.
+
+default=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}, \year\uniq. \format[FormatChars]{\title}. \journal \volume, \format[FormatPagesForHTML]{\pages}.
+

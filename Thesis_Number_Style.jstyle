@@ -1,0 +1,57 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+
+NAME
+Licentiate's Thesis
+
+PROPERTIES
+Title=Bibliography
+IsSortByPosition=false
+IsNumberEntries=true
+ReferenceParagraphFormat=Bibliography 1
+ReferenceHeaderParagraphFormat=Bibliography Heading
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=2
+MaxAuthorsFirst=6
+AuthorSeparator=,
+AuthorLastSeparator= & 
+EtAlString= et al.
+YearSeparator= 
+InTextYearSeparator= 
+BracketBefore=[
+BracketAfter=]
+BracketBeforeInList=	[
+BracketAfterInList=]	
+CitationSeparator=; 
+UniquefierSeparator=,
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=false
+ItalicCitations=false
+BoldCitations=false
+SuperscriptCitations=false
+SubscriptCitations=false
+MultiCiteChronological=true
+
+LAYOUT
+article=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \title. In <i>\journal</i>\begin{volume} <b>\volume</b>\end{volume}\begin{pages}, p. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+book=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author}\begin{editor}\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\editor} (Ed.)\end{editor} (\year\uniq). <i>\title</i>. \publisher\begin{address}, \address\end{address}.
+
+incollection=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \title. In\begin{editor} \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\editor} (Ed.),\end{editor} <i>\booktitle</i>, \publisher.
+
+inproceedings=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \title. In <i>\booktitle\begin{volume} <b>\volume</b>\end{volume}</i>\begin{pages}, p. \format[FormatPagesForHTML]{\pages}\end{pages}\begin{address}. \address\end{address}.
+
+inbook=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \chapter. In \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\editor} (Ed.), <i>\title</i>, \publisher.
+
+mastersthesis=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). <i>\title</i>. M.Sc. thesis, \school.
+
+phdthesis=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). <i>\title</i>. Ph.D. thesis, \school.
+
+standard=\organization (\year\uniq). <i>\title</i>. \url.
+
+electronic=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \title.\begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \organization.\end{organization}\begin{url} Available \url.\end{url}
+
+default=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\, and)]{\author} (\year\uniq). \title. In <i>\journal</i>\begin{volume} <b>\volume</b>\end{volume}\begin{pages}, p. \format[FormatPagesForHTML]{\pages}\end{pages}.

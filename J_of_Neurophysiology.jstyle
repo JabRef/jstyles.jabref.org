@@ -1,0 +1,64 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+
+NAME
+Journal of Neurophysiology style file for JabRef-oo plugin.
+It works sufficiently well for my purposes, and is offered "as-is."
+Revisions and addition of more entrytypes are invited.
+For citations from journals whose articles all start with page 1,
+e.g. Physical Review E or the PLoS and Frontiers journals,
+you might want to copy the eid or doi to the BibTeX "pages" field.
+Better might be to have the option of setting a software switch 
+so that the eid or doi is automatically output for such journals.
+Ted Carnevale 20101003
+
+JOURNALS
+Journal of Neurophysiology
+
+PROPERTIES
+Title=References
+IsSortByPosition=false
+IsNumberEntries=false
+ReferenceParagraphFormat=Default
+ReferenceHeaderParagraphFormat=Heading 2
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=2
+MaxAuthorsFirst=2
+AuthorSeparator=, 
+AuthorAndsReplacer=, 
+AuthorLastSeparator= and 
+AuthorLastSeparatorInText= and 
+EtAlString= et al.
+YearSeparator= 
+InTextYearSeparator= 
+BracketBefore=(
+BracketAfter=)
+BracketBeforeInList=(
+BracketAfterInList=)
+CitationSeparator=; 
+UniquefierSeparator=,
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=false
+ItalicCitations=false
+BoldCitations=false
+SuperscriptCitations=false
+SubscriptCitations=false
+MultiCiteChronological=true
+
+LAYOUT
+article=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. \title. <i>\journal</i> \volume\begin{pages}:\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.
+
+book=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. <i>\title</i>. \begin{editor}\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\editor} (Ed.). \end{editor}\address: \publisher, \year\uniq.
+
+inbook=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. \chapter. In: <i>\title</i>. \address: \publisher, \year\uniq, \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+incollection=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. \title. In: <i>\booktitle</i>, edited by \format  [AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\editor}. \address: \publisher, \year\uniq, \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+inproceedings=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. \title, <i>\booktitle</i> \volume\begin{pages}:\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.
+
+manual=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. <i>\title</i>. \begin{editor}\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\editor} (Ed.). \end{editor}\address, \year\uniq.
+
+default=\format[AuthorLastFirst,AuthorAbbreviator,AuthorLastFirstAbbrCommas]{\author}. \title, <i>\journal</i> \volume\begin{pages}:\format[FormatPagesForHTML]{\pages}\end{pages}, \year\uniq.

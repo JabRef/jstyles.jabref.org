@@ -1,0 +1,55 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+
+NAME
+Style file for Brazilian Journal of Aquatic Science and Technology (UNIVALI) for JabRef-oo plugin.
+
+JOURNALS
+Brazilian Journal of Aquatic Science and Technology
+
+PROPERTIES
+Title=References
+IsSortByPosition=false
+IsNumberEntries=false
+ReferenceParagraphFormat=Default
+ReferenceHeaderParagraphFormat=Default
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=2
+MaxAuthorsFirst=2
+AuthorSeparator= & 
+AuthorLastSeparator= & 
+EtAlString= et al.
+YearSeparator=, 
+InTextYearSeparator= 
+BracketBefore=(
+BracketAfter=)
+BracketBeforeInList=(
+BracketAfterInList=)
+CitationSeparator=; 
+UniquefierSeparator= 
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=false
+ItalicCitations=false
+BoldCitations=false
+SuperscriptCitations=false
+SubscriptCitations=false
+
+
+LAYOUT
+
+article=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \format{\journal} \format{\volume}:\begin{pages}\format{\pages}.\end{pages}
+
+book=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \begin{edition}\format{\edition} Edition.\end{edition} \format{\publisher}, \format{\address}, \begin{pages}\format{\pages}p.\end{pages}
+
+incollection=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. In: \format[AuthorAbbreviator, AuthorAndsCommaReplacer, NoSpaceBetweenAbbreviations]{\editor} (\format[IfPlural(eds.,ed.)]{\editor}) \format{\booktitle}. \format{\publisher}, \format{\address}. \begin{pages}\format{\pages}pp.\end{pages}
+
+thesis=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \format{\type}. \format{\school}. \begin{pages}\format{\pages}p.\end{pages}
+
+techreport=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \format{\type} \format{\number}. \format{\institution}, \format{\address}. \begin{pages}\format{\pages}p.\end{pages}
+
+default=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \format{\journal} \format{\volume}:\begin{pages}\format{\pages}\end{pages}
+
+misc=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. \format{\title}. \format{\howpublished} \format{\url}. Accessed \format{\month}

@@ -1,0 +1,63 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+
+NAME
+»Turabian«. Version 0.1.
+Adaptation by Uwe Jochum (May 2011). 
+
+This style is useful mainly for the humanities. It focuses on »book«,
+»inbook«, »collection«, »incollection«, and »article«. It defaults on
+»book«.
+
+Some of the citation fields like »shorthand« only exist in Biblatex,
+not in BibTeX. If you are working with this style in conjunction with
+BibTeX, Biblatex-fields like »shorthand« simply won't be used.
+
+JOURNALS
+No special journal.
+
+PROPERTIES
+Title="Bibliography"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="Text body"
+ReferenceHeaderParagraphFormat="Heading 2"
+
+CITATION
+BibtexKeyCitations=false
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="3"
+MaxAuthorsFirst="3"
+AuthorSeparator="/"
+AuthorLastSeparator="/" 
+AuthorLastSeparatorInText="/"
+EtAlString=" u.a."
+YearSeparator=" "
+InTextYearSeparator=" "
+BracketBefore=
+BracketAfter=
+BracketBeforeInList="["
+BracketAfterInList="] "
+CitationSeparator="; "
+UniquefierSeparator=","
+GroupedNumbersSeparator="-"
+MinimumGroupingCount="3"
+FormatCitations="false"
+CitationCharacterFormat="Default"
+MultiCiteChronological="true"
+
+LAYOUT
+article=\begin{author}\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\author}: \end{author}\begin{title}\format[HTMLChars,FormatPagesForHTML]{\title}.\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle} In: <i>\journal</i> \volume (\year), p. \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.
+
+book=\begin{author}\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/),HTMLChars]{\author}: \end{author}\begin{editor}\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer,Replace(&,/)]{\editor} (ed.): \end{editor}<i>\begin{title}\format[HTMLChars,FormatPagesForHTML]{\title}.\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle}</i>\begin{note} \format[HTMLChars]{\note}.\end{note}\begin{edition} \format[HTMLChars]{\edition}. ed.\end{edition} \begin{address}\format[HTMLChars]{\address}:\end{address} \begin{publisher}\format[HTMLChars]{\publisher},\end{publisher} \begin{year}\format[FormatPagesForHTML]{\year}\end{year}\uniq.\begin{shorthand} Cited as <i>\format[HTMLChars]{\shorthand}</i>\end{shorthand}
+
+inbook=\begin{author}\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\author}:\end{author}<i>\begin{title} \format[HTMLChars,FormatPagesForHTML]{\title}.</i>\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle} In: <i>\begin{maintitle}\format[HTMLChars,FormatPagesForHTML]{\maintitle}.\end{maintitle}\begin{mainsubtitle} \format[HTMLChars,FormatPagesForHTML]{\mainsubtitle}.\end{mainsubtitle}</i>\begin{editor} Edited by \format[AuthorFirstFirst,AuthorAndsReplacer]{\editor}.\end{editor}<i>\begin{booktitle} \format[HTMLChars,FormatPagesForHTML]{\booktitle}.\end{booktitle}\begin{booksubtitle} \format[HTMLChars,FormatPagesForHTML].{\booksubtitle}\end{booksubtitle}</i> \address: \publisher, \year\uniq, p. \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.
+
+collection=\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\author}\begin{editor}\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\editor} (ed.)\end{editor}:<i>\begin{title} \format[HTMLChars,FormatPagesForHTML]{\title}.\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle}</i>\begin{note} \format[HTMLChars]{\note}.\end{note}\begin{edition} \format[HTMLChars]{\edition}.\end{edition} \begin{address}\format[HTMLChars]{\address}:\end{address} \begin{publisher}\format[HTMLChars]{\publisher},\end{publisher} \year\uniq.
+
+incollection=\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\author}:\begin{title} \format[HTMLChars,FormatPagesForHTML]{\title}.\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle} In: \format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\editor} (ed.):\end{editor}<i>\begin{booktitle} \format[HTMLChars,FormatPagesForHTML]{\booktitle}.\end{booktitle}\begin{booksubtitle} \format[HTMLChars,FormatPagesForHTML]{\booksubtitle}.\end{booksubtitle}</i>\begin{volume} Vol. \format[HTMLChars,FormatPagesForHTML]{\volume}.\end{volume} \address: \publisher, \year\uniq, p. \begin{pages}\format[FormatPagesForHTML]{\pages}\end{pages}.
+
+phdthesis=\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,)]{\author}: <i>\title</i>. \year\uniq.
+
+default=\format[AuthorLastFirst,AuthorAndsReplacer,Replace(&,/)]{\author}\begin{editor}\format[AuthorLastFirst,AuthorAbbreviator,AuthorAndsReplacer,Replace(&,/)]{\editor} (ed.): \end{editor}<i>\begin{title} \format[HTMLChars,FormatPagesForHTML]{\title}.\end{title}\begin{subtitle} \format[HTMLChars,FormatPagesForHTML]{\subtitle}.\end{subtitle}</i>\begin{note} \format[HTMLChars]{\note}.\end{note}\begin{edition} \format[HTMLChars]{\edition}.\end{edition} \address: \publisher, \year.\begin{shorthand} Cited as <i>\format[HTMLChars]{\shorthand}</i>\end{shorthand}.
+

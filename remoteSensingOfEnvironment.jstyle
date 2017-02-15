@@ -1,0 +1,61 @@
+# Written by Florian Detsch <florian.detsch@staff.uni-marburg.de>
+
+NAME
+Remote Sensing of Environment with abbreviated journal names
+
+JOURNALS
+Remote Sensing of Environment
+
+PROPERTIES
+Title="References"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="Text body"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+BibtexKeyCitations=false
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="2"
+MaxAuthorsFirst="2"
+AuthorSeparator=","
+AuthorLastSeparator=" and "
+AuthorLastSeparatorInText=" and "
+AuthorNumber = 10
+EtAlString=" et al."
+ItalicEtAl="false"
+YearSeparator=" "
+InTextYearSeparator=" "
+BracketBefore="("
+BracketAfter=")"
+BracketBeforeInList="("
+BracketAfterInList=")"
+CitationSeparator=", "
+UniquefierSeparator=","
+GroupedNumbersSeparator="-"
+MinimumGroupingCount="3"
+FormatCitations="false"
+CitationCharacterFormat="Default"
+MultiCiteChronological="false"
+PageInfoSeparator="; "
+
+LAYOUT
+article=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. <i>\format[JournalAbbreviator]{\journal}</i>, \volume\begin{pages}, \format[FormatPagesForHTML]{\pages}\end{pages}, doi:\doi.
+
+book=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). <i>\title</i>. \address: \publisher.
+
+incollection=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. In \format[AuthorAbbreviator,AuthorFirstFirst,AuthorAndsReplacer]{\editor} (Eds.), <i>\Booktitle</i> (pp. \format[FormatPagesForHTML]{\pages}\end{pages}). \address: \publisher.
+
+inbook=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author}, \year\uniq. <i>\title</i>. In \format[AuthorAbbreviator,AuthorFirstFirst,AuthorAndsReplacer]{\editor} (Eds.), \Series, \publisher, \address, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+inproceedings=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author}, \year\uniq. \title. In \format[AuthorAbbreviator,AuthorFirstFirst,AuthorAndsReplacer]{\editor} (Eds.), <i>\Booktitle</i>, \begin{publisher}\publisher,\end{publisher}\begin{address}\address\end{address}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+phdthesis=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer)]{\author} (\format[FormatChars]{\year}\uniq). \title [Doctor Dissertation]. \address: \school.
+
+manual=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. \Note. \Url.
+
+techreport=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. 
+
+default=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. <i>\journal</i>, \volume\begin{pages}, \format[FormatPagesForHTML]{pp. \pages}\end{pages}.
+
