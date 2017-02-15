@@ -1,0 +1,3 @@
+- Add the `.style` file
+- Add the style file to the README.md
+- Create a pull request
