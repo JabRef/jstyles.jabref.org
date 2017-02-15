@@ -1,3 +1,4 @@
 - Add the `.style` file
 - Add the style file to the README.md
+- If possible, run [markdown-toc](https://github.com/jonschlinkert/markdown-toc) using `markdown-toc -i README.md` to regenerate the table of contents in the README.md
 - Create a pull request
