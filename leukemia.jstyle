@@ -1,0 +1,47 @@
+# This file is licensed under the terms of CC BY 4.0. 
+# Written by Katrina Vanura, Medical University of Vienna, AUT
+
+NAME
+Leukemia style file
+
+JOURNALS
+Leukemia
+
+PROPERTIES
+Title="References"
+IsSortByPosition=true
+IsNumberEntries=true
+ReferenceParagraphFormat="Standard"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+
+CITATION
+MaxAuthors=6
+MaxAuthorsFirst=6
+AuthorSeparator=", "
+AuthorLastSeparator=", "
+EtAlString=" et al"
+ItalicEtAl="true"
+CitationSeparator=","
+MultiCiteChronological=true
+BracketBefore=""
+BracketAfter=""
+BracketBeforeInList=""
+BracketAfterInList=""
+MinimumGroupingCount=3
+CitationCharacterFormat="Standard"
+FormatCitations=true
+GroupedNumbersSeparator="-"
+UniquefierSeparator=","
+InTextYearSeparator=" "
+YearSeparator=" "
+
+LAYOUT
+article=\begin{author} \format[Authors(LastFirst,InitialsNospace,NoPunc,sep=\, ,LastSep=\, ,EtAl= et al,6,6),]{\author}\end{author}.\begin{title} \format[RemoveLatexCommands]{\title} \end{title}<i>\begin{journal}\format[JournalAbbreviator]{\journal}\end{journal}</i>\begin{year} \year\uniq;\end{year}<b>\begin{volume} \format[RemoveLatexCommands]{\volume}\end{volume}</b>:\begin{pages} \format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}<br>
+
+book=\begin{editor} \format[Authors(LastFirst,InitialsNospace,NoPunc,sep=\, ,LastSep=\, ,EtAl= et al.,6,6),]{\editor}\end{editor} (eds).<i>\begin{title} \format[RemoveLatexCommands]{\title}\end{title}</i> \publisher: \address, \year\uniq.
+
+inbook=\begin{author} \format[Authors(LastFirst,InitialsNospace,NoPunc,sep=\, ,LastSep=\, ,EtAl= et al,6,6),]{\author}\end{author}.\begin{title} \format[RemoveLatexCommands]{\title} \end{title}In: \begin{editor} \format[RemoveLatexCommands] \format[Authors(LastFirst,InitialsNospace,NoPunc,sep=\, ,LastSep=\, ,EtAl= et al.,6,6),]{\editor} (eds).\end{editor}<i>\begin{booktitle} \format[RemoveLatexCommands]{\booktitle}\end{booktitle}</i> \publisher: \address, \year\uniq, pp \begin{pages} \format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}
+
+
+default=\begin{author} \format[Authors(LastFirst,InitialsNospace,NoPunc,sep=\, ,LastSep=\, ,EtAl= et al,6,6),]{\author}\end{author}.\begin{title} \format[RemoveLatexCommands]{\title} \end{title}<i>\begin{journal}\format[JournalAbbreviator]{\journal}\end{journal}</i>\begin{year} \year\uniq;\end{year}<b>\begin{volume} \format[RemoveLatexCommands]{\volume}\end{volume}</b>:\begin{pages} \format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}<br>
