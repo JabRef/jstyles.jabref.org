@@ -19,11 +19,19 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 - [Available Styles](#available-styles)
   * [Brazilian Journal of Aquatic Science and Technology](#brazilian-journal-of-aquatic-science-and-technology)
   * [Advanced Materials](#advanced-materials)
+  * [American Journal of Hematology](#american-journal-of-hematology)
   * [American Mineralogist](#american-mineralogist)
+  * [Annals of Hematology](#annals-of-hematology)
+  * [Blood](#blood)
+  * [British Journal of Haematology](#british-journal-of-haematology)
   * [Chemical Geology](#chemical-geology)
   * [Geochim. Cosmochim. Acta](#geochim-cosmochim-acta)
+  * [Haematologica](#haematologica)
+  * [Hematological Oncology](#hematological-oncology)
+  * [Journal of Hematology and Oncology](#journal-of-hematology-and-oncology)
   * [Journal of Materials Chemistry](#journal-of-materials-chemistry)
   * [Journal of Neurophysiology](#journal-of-neurophysiology)
+  * [Leukemia](#leukemia)
   * [Remote Sensing of Environment.](#remote-sensing-of-environment)
   * [Turabian (Deutsch)](#turabian-deutsch)
   * [Turabian (English)](#turabian-english)
@@ -46,11 +54,21 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 - Author: Steffan Cook
 - File: [Adv_Mater.jstyle](Adv_Mater.jstyle)
 
+### American Journal of Hematology
+
+- Author: Katrina Vanura
+- File: [AmJHematol.jstyle](AmJHematol.jstyle)
+
 ### American Mineralogist
 
 - Author: Jan Stelling
 - File: [American_Mineralogist.jstyle](American_Mineralogist.jstyle)
 - ![preview](American_Mineralogist.png)
+
+### Annals of Hematology
+
+- Author: Katrina Vanura
+- File: [AnnHematol.jstyle](AnnHematol.jstyle)
 
 ### Chemical Geology
 
@@ -58,11 +76,36 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 - File: [Chemical_Geology.jstyle](Chemical_Geology.jstyle)
 - ![preview](Chemical_Geology.png)
 
+### Blood
+
+- Author: Katrina Vanura
+- File: [Blood.jstyle](Blood.jstyle)
+
+### British Journal of Haematology
+
+- Author: Katrina Vanura
+- File: [BrJHaematol.jstyle](BrJHaematol.jstyle)
+
 ### Geochim. Cosmochim. Acta
 
 - Author: Jan Stelling
 - File: [Geochim_Cosmochim_Acta.jstyle](Geochim_Cosmochim_Acta.jstyle)
 - ![preview](Geochim_Cosmochim_Acta.png)
+
+### Haematologica
+
+- Author: Katrina Vanura
+- File: [Haematologica.jstyle](Haematologica.jstyle)
+
+### Hematological Oncology
+
+- Author: Katrina Vanura
+- File: [HematolOncol.jstyle](HematolOncol.jstyle)
+
+### Journal of Hematology and Oncology
+
+- Author: Katrina Vanura
+- File: [JHematolOncol.jstyle](JHematolOncol.jstyle)
 
 ### Journal of Materials Chemistry
 
@@ -74,6 +117,11 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 - Author: Ted Carnevale
 - File: [J_of_Neurophysiology.jstyle](J_of_Neurophysiology.jstyle)
 - ![preview](J_of_Neurophysiology.png)
+
+### Leukemia
+
+- Author: Katrina Vanura
+- File: [Leukemia.jstyle](Leukemia.jstyle)
 
 ### Remote Sensing of Environment.
 
