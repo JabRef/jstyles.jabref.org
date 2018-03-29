@@ -57,7 +57,7 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 ### American Journal of Hematology
 
 - Author: Katrina Vanura
-- File: [AmJHematol.jstyle](https://github.com/JabRef/jstyles.jabref.org/pull/5/commits/7152a3e702a66af02baf833c588ad73f1d3030c2)
+- File: [AmJHematol.jstyle](AmJHematol.jstyle)
 
 ### American Mineralogist
 
@@ -68,7 +68,7 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 ### Annals of Hematology
 
 - Author: Katrina Vanura
-- File: [AnnHematol.jstyle](https://github.com/JabRef/jstyles.jabref.org/pull/4/commits/da4857a9f5c00c38be773c5959d7f8847c97e0e8)
+- File: [AnnHematol.jstyle](AnnHematol.jstyle)
 
 ### Chemical Geology
 
@@ -79,12 +79,12 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 ### Blood
 
 - Author: Katrina Vanura
-- File: [Blood.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-4#diff-54a748fc471bec92d55f1640d184385e)
+- File: [Blood.jstyle](Blood.jstyle)
 
 ### British Journal of Haematology
 
 - Author: Katrina Vanura
-- File: [BrJHaematol.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-5#diff-2d0f67732513c4849a21ddd332a21f1c)
+- File: [BrJHaematol.jstyle](BrJHaematol.jstyle)
 
 ### Geochim. Cosmochim. Acta
 
@@ -95,17 +95,17 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 ### Haematologica
 
 - Author: Katrina Vanura
-- File: [Haematologica.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-6#diff-81fae5cb7fdd121b95f99190750a7073)
+- File: [Haematologica.jstyle](Haematologica.jstyle)
 
 ### Hematological Oncology
 
 - Author: Katrina Vanura
-- File: [HematolOncol.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-7#diff-c7ad72deb0b324493278b4e8ac9f66ce)
+- File: [HematolOncol.jstyle](HematolOncol.jstyle)
 
 ### Journal of Hematology and Oncology
 
 - Author: Katrina Vanura
-- File: [JHematolOncol.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-8#diff-1408a47c4eecc1c1242ba62e8bb7d6ee)
+- File: [JHematolOncol.jstyle](JHematolOncol.jstyle)
 
 ### Journal of Materials Chemistry
 
@@ -121,7 +121,7 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 ### Leukemia
 
 - Author: Katrina Vanura
-- File: [Leukemia.jstyle](https://github.com/JabRef/jstyles.jabref.org/compare/master...vanukkalla:patch-9#diff-6a95c7908dfccf3c1c8d83cbd2ed21dc)
+- File: [Leukemia.jstyle](Leukemia.jstyle)
 
 ### Remote Sensing of Environment.
 
