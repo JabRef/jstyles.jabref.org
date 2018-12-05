@@ -44,8 +44,7 @@ incollection=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \t
 
 inbook= \format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \chapter. In \format[Authors(FirstFirst,Initials,Amp,7)]{\editor} (Ed.), <i>\title</i>\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume} (pp. \format[FormatPagesForHTML]{\pages}). \address: \publisher.
 
-phdthesis=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). <i>\title</i> (Doctoral Dissertation). Retrieved from \url
+thesis=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. <i>\title</i>. \format{\type}. \format{\school}, \address. \begin{pages}\format{\pages}p.\end{pages}
 
-mastersthesis=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). <i>\title</i> (Master's Thesis). Retrieved from \url
 
 default=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \title. <i>\journal, \volume</i>\begin{number}(\number)\end{number}, \format[FormatPagesForHTML]{\pages}. \begin{doi}doi:\format[DOIStrip]{\doi}\end{doi}
