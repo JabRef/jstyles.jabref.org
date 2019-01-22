@@ -1,0 +1,50 @@
+NAME
+APA6 style
+
+JOURNALS
+Journal name 1
+Journal name 2
+
+PROPERTIES
+Title="References"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="Hanging Indent"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="2"
+MaxAuthorsFirst="5"
+AuthorSeparator=", "
+AuthorLastSeparator=" & "
+AuthorLastSeparatorInText= " and "
+EtAlString=" et al."
+YearSeparator=", "
+InTextYearSeparator=" "
+BracketBefore="("
+BracketAfter=")"
+BracketBeforeInList="("
+BracketAfterInList=")"
+CitationSeparator="; "
+UniquefierSeparator=","
+GroupedNumbersSeparator="-"
+MinimumGroupingCount="3"
+FormatCitations="false"
+CitationCharacterFormat="Text Body"
+MultiCiteChronological="false"
+
+LAYOUT
+article=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \title. <i>\journal, \volume</i>\begin{number}(\number)\end{number}, \format[FormatPagesForHTML]{\pages}. \begin{doi}doi:\format[DOIStrip]{\doi}\end{doi}
+
+book=\begin{author}\format[Authors(LastFirst,Initials,Amp,7)]{\author}\end{author}\begin{editor}\format[Authors(LastFirst,Initials,Amp,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor})\end{editor} (\year\uniq). <i>\title</i>\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume}. \address: \publisher. \begin{url} Retreived from \url\end{url}
+
+incollection=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \title. In \format[Authors(FirstFirst,Initials,Amp,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor}), <i>\title</i>\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume}. \address: \publisher
+
+inbook= \format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \chapter. In \format[Authors(FirstFirst,Initials,Amp,7)]{\editor} (Ed.), <i>\title</i>\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume} (pp. \format[FormatPagesForHTML]{\pages}). \address: \publisher.
+
+thesis=\format[AuthorAbbreviator,AuthorAndsCommaReplacer,NoSpaceBetweenAbbreviations]{\author} \year\uniq. <i>\title</i>. \format{\type}. \format{\school}, \address. \begin{pages}\format{\pages}p.\end{pages}
+
+
+default=\format[Authors(LastFirst,Initials,Amp,7]{\author} (\year\uniq). \title. <i>\journal, \volume</i>\begin{number}(\number)\end{number}, \format[FormatPagesForHTML]{\pages}. \begin{doi}doi:\format[DOIStrip]{\doi}\end{doi}
