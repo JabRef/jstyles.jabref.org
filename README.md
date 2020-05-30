@@ -142,6 +142,20 @@ This follows [Elsevier's guidelines for authors](https://www.elsevier.com/journa
 - File: [turabian-english.jstyle](turabian-english.jstyle)
 - ![preview](turabian-english.png)
 
+### Vancouver Style (Deutsch)
+
+Vancouver-Style wie hier beschrieben: https://guides.lib.monash.edu/ld.php?content_id=48260115 . (icht alle bibtex-Entitäten sind implementiert)
+
+- Author: Eike Kühn
+- File: [Vancouver_Deutsch.jstyle](Vancouver_Deutsch.jstyle)
+
+### Vancouver Style (English)
+
+Vancouver style as described here: https://guides.lib.monash.edu/ld.php?content_id=48260115 . (not all bibtex entities implemented)
+
+- Author: Eike Kühn
+- File: [Vancouver_English.jstyle](Vancouver_English.jstyle)
+
 ## Example Styles
 
 ### Example style file
