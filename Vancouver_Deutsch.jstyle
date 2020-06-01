@@ -1,0 +1,48 @@
+# This file is licensed under the terms of CC BY 4.0. 
+# Written by Eike Kühn, Berlin, DE
+
+NAME
+Vancouver-Style (Deutsch)
+
+PROPERTIES
+Title="Referenzen"
+IsSortByPosition="true"
+IsNumberEntries="true"
+ReferenceParagraphFormat="Text Body"
+ReferenceHeaderParagraphFormat="Heading 2"
+
+CITATION
+AuthorField="author/editor"
+AuthorLastSeparator=", "
+AuthorLastSeparatorInText=""
+AuthorSeparator=", "
+BracketAfter="]"
+BracketAfterInList=". "
+BracketBefore="["
+BracketBeforeInList=""
+CitationCharacterFormat="Default Style"
+CitationSeparator=", "
+EtAlString="et al."
+FormatCitations="false"
+GroupedNumbersSeparator="-"
+InTextYearSeparator=" "
+ItalicEtAl="false"
+MaxAuthors="1000"
+MaxAuthorsFirst="1000"
+MinimumGroupingCount="3"
+MultiCiteChronological="true"
+PageInfoSeparator="; "
+UniquefierSeparator=","
+YearField="year"
+YearSeparator=" "
+
+LAYOUT
+article=default
+
+techreport=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} Seiten.\end{pages}\begin{edition}\edition. Auflage.\end{edition}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+book=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{edition}\edition. Auflage. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} Seiten.\end{pages}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+inbook=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author} In: \begin{editor}\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\editor}, Editoren. \end{editor}\format[Replace(\.$,)]{\title}. \begin{edition}\edition. Auflage. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} Seiten \format[FormatPagesForHTML]{\pages}.\end{pages}\begin{chapter} Kapitel: \format[FormatPagesForHTML]{\chapter}.\end{chapter}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+default=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{journal}\journal. \end{journal}\begin{year}\year\end{year}\begin{volume||issue};\end{volume||issue}\begin{volume}\volume\end{volume}\begin{issue}(\issue)\end{issue}\begin{pages}:\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
