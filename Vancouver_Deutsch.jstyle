@@ -37,12 +37,15 @@ YearField="year"
 YearSeparator=" "
 
 LAYOUT
-article=default
 
 techreport=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} Seiten.\end{pages}\begin{edition}\edition. Auflage.\end{edition}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
 
 book=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{edition}\edition. Auflage. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} Seiten.\end{pages}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
 
 inbook=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author} In: \begin{editor}\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\editor}, Editoren. \end{editor}\format[Replace(\.$,)]{\title}. \begin{edition}\edition. Auflage. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} Seiten \format[FormatPagesForHTML]{\pages}.\end{pages}\begin{chapter} Kapitel: \format[FormatPagesForHTML]{\chapter}.\end{chapter}\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+mastersthesis=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{school}\school; \end{school}\begin{year}\year\end{year}.\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+phdthesis=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{school}\school; \end{school}\begin{year}\year\end{year}.\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
 
 default=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{journal}\journal. \end{journal}\begin{year}\year\end{year}\begin{volume||issue};\end{volume||issue}\begin{volume}\volume\end{volume}\begin{issue}(\issue)\end{issue}\begin{pages}:\format[FormatPagesForHTML]{\pages}\end{pages}.\begin{url} Abrufbar unter: \url\end{url}\begin{doi} DOI: \doi\end{doi}
