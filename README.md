@@ -35,6 +35,8 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
   * [Remote Sensing of Environment.](#remote-sensing-of-environment)
   * [Turabian (Deutsch)](#turabian-deutsch)
   * [Turabian (English)](#turabian-english)
+  * [Vancouver Style (Deutsch)](#vancouver-style-deutsch)
+  * [Vancouver Style (English)](#vancouver-style-english)
 - [Example Styles](#example-styles)
   * [Example style file](#example-style-file)
   * ["Thesis", example style with numbered citations](#thesis-example-style-with-numbered-citations)
