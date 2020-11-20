@@ -3,7 +3,7 @@
 This repository contains jstyle files used for OpenOffice integration in JabRef.
 It uses the format of the [Custom Export Filters](http://help.jabref.org/en/CustomExports).
 One can use the [
-Export-Filter Editor for Jabref](https://sourceforge.net/projects/efe/) to quickly create his own export filter.
+Export-Filter Editor for Jabref](https://github.com/teertinker/Export-Filter-Editor) to quickly create his own export filter.
 For more information, see <https://help.jabref.org/en/OpenOfficeIntegration>.
 
 To use the styles below, make sure to download the linked `.jstyle` files directly to disk rather than copy-pasting the contents from your browser.
