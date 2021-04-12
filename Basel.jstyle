@@ -1,0 +1,51 @@
+# This file is licensed under the terms of CC BY 4.0. 
+# Written by Luigi Marongiu, University of Heidelberg, DE 
+# ver. 1.0
+#
+# Thanks to the JabRef community for support
+
+NAME
+Basel file style 
+
+JOURNALS
+Cancers
+International journal of molecular sciences
+Microorganisms
+Nutrients
+Pathogens
+Viruses
+
+PROPERTIES
+Title="References"
+IsSortByPosition=true
+IsNumberEntries=true
+ReferenceParagraphFormat="Text body"
+ReferenceHeaderParagraphFormat="Text body"
+
+
+CITATION
+MaxAuthors=3
+MaxAuthorsFirst=10
+AuthorSeparator="; "
+AuthorLastSeparator="; "
+EtAlString=" et al."
+CitationSeparator=","
+MultiCiteChronological=true
+BracketBefore="["
+BracketAfter="]"
+BracketBeforeInList=""
+BracketAfterInList=". "
+MinimumGroupingCount=3
+CitationCharacterFormat="Standard"
+FormatCitations=true
+GroupedNumbersSeparator="-"
+UniquefierSeparator=","
+InTextYearSeparator=" "
+YearSeparator=" "
+
+LAYOUT
+default=\begin{author}\format[Authors(LastFirst,sep=; ,LastSep=; ,EtAl= et al.,10,9),]{\author} \end{author}\begin{title}\format[RemoveLatexCommands]{\title} \end{title}<i>\begin{journal}\format[RemoveLatexCommands,JournalAbbreviator]{\journal} \end{journal}</i><b>\begin{year}\year\uniq\end{year}</b><i>\begin{volume}, \format[RemoveLatexCommands]{\volume}\end{volume}</i>\begin{pages}, \format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}<br>
+
+article=\begin{author}\format[Authors(LastFirst,sep=; ,LastSep=; ,EtAl= et al.,10,9),]{\author} \end{author}\begin{title}\format[RemoveLatexCommands]{\title}. \end{title}<i>\begin{journal}\format[RemoveLatexCommands,JournalAbbreviator]{\journal} \end{journal}</i><b>\begin{year}\year\uniq\end{year}</b><i>\begin{volume}, \format[RemoveLatexCommands]{\volume}, \end{volume}</i>\begin{pages}\format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}<br>
+
+book=\begin{author}\format[Authors(LastFirst,sep=; ,LastSep=; ,EtAl= et al.,10,9),]{\author}\end{author}\begin{title} \format[RemoveLatexCommands]{\title},\end{title}\begin{edition}\format[RemoveLatexCommands]{\edition}; \end{edition}\begin{publisher}Publisher: \format[RemoveLatexCommands]{\publisher}; \end{publisher}\begin{year}\year\uniq; \end{year}\begin{volume}Volume \format[RemoveLatexCommands]{\volume}, \end{volume}\begin{pages}\format[RemoveLatexCommands,FormatPagesForHTML]{\pages}.\end{pages}<br>
