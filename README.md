@@ -17,12 +17,13 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 <!-- toc -->
 
 - [Available Styles](#available-styles)
-  * [Brazilian Journal of Aquatic Science and Technology](#brazilian-journal-of-aquatic-science-and-technology)
   * [Advanced Materials](#advanced-materials)
   * [American Journal of Hematology](#american-journal-of-hematology)
+  * [American Journal of Human Genetics](#american-journal-of-human-genetics)
   * [American Mineralogist](#american-mineralogist)
   * [Annals of Hematology](#annals-of-hematology)
   * [Blood](#blood)
+  * [Brazilian Journal of Aquatic Science and Technology](#brazilian-journal-of-aquatic-science-and-technology)
   * [British Journal of Haematology](#british-journal-of-haematology)
   * [Chemical Geology](#chemical-geology)
   * [Geochim. Cosmochim. Acta](#geochim-cosmochim-acta)
@@ -46,10 +47,6 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 ## Available Styles
 
-### Brazilian Journal of Aquatic Science and Technology
-
-- Author: Colin Beasley
-- File: [BJAST.jstyle](BJAST.jstyle)
 
 ### Advanced Materials
 
@@ -60,6 +57,13 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 - Author: Katrina Vanura
 - File: [AmJHematol.jstyle](AmJHematol.jstyle)
+
+### American Journal of Human Genetics
+
+- Author: [Ryan J. Daniels](https://github.com/RJDan)
+- Updated: 2022-01-22
+- File: [AmJHumanGen_220121.jstyle](AmJHumanGen_220121.jstyle)
+- ![preview](AmJHumanGen_220121.png)
 
 ### American Mineralogist
 
@@ -82,6 +86,11 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
 
 - Author: Katrina Vanura
 - File: [Blood.jstyle](Blood.jstyle)
+
+### Brazilian Journal of Aquatic Science and Technology
+
+- Author: Colin Beasley
+- File: [BJAST.jstyle](BJAST.jstyle)
 
 ### British Journal of Haematology
 
@@ -174,3 +183,4 @@ Vancouver style as described here: https://guides.lib.monash.edu/ld.php?content_
 The files are subject to the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) if not otherwise noted.
 
 Some files are subject under the terms of the GPL version 2 (or later).
+
