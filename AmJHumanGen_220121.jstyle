@@ -2,6 +2,9 @@
 # Written by R. J. Daniels
 # Base on instructions from here : https://www.cell.com/ajhg/authors
 
+## Issues remaining
+# organisation names should not be treated as author name
+
 NAME
 AmJHumanGen Author-year citation
 
@@ -18,16 +21,17 @@ ReferenceHeaderParagraphFormat="Heading 1"
 CITATION
 AuthorField=author/editor
 YearField=year
-MaxAuthors=2
+MaxAuthors=3
+MaxAuthorsFirst=10
 AuthorSeparator=, 
-AuthorLastSeparator= and 
-EtAlString= et al.
+AuthorLastSeparator=, 
+EtAlString=' et al.'
 YearSeparator=, 
 InTextYearSeparator= 
 BracketBefore=(
 BracketAfter=)
-BracketBeforeInList=[
-BracketAfterInList=]
+BracketBeforeInList=""
+BracketAfterInList=". "
 CitationSeparator=; 
 UniquefierSeparator=,
 GroupedNumbersSeparator=-
@@ -40,27 +44,29 @@ SubscriptCitations=false
 
 
 LAYOUT
-default=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format[FormatChars]{\title}. \journal <i>\format[FormatChars]{\volume}</i>, \format[FormatPagesForHTML]{\pages}.
+default=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title}\begin{journal} \format[JournalAbbreviator]{\journal}\end{journal} <i>\format[FormatChars]{\volume}</i>\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
 
-article=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\format[FormatChars]{\year}\uniq). \format[FormatChars]{\title}. \journal <i>\format[FormatChars]{\volume}</i>, \format[FormatPagesForHTML]{\pages}.
+article=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\format[FormatChars]{\year}\uniq). \begin{title}\format[FormatChars]{\title}.\end{title}\begin{journal} \format[JournalAbbreviator]{\journal}\end{journal} <i>\format[FormatChars]{\volume}</i>\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
 
-book=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author}\begin{editor}\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} ed.\end{editor} (\year\uniq). \format[FormatChars]{\title} (\format[FormatChars]{\publisher}).
+book=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}\begin{editor}\format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}(\year\uniq).\begin{title} \format[FormatChars]{\title} \end{title}(\format[FormatChars]{\publisher}).
 
-inbook=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format[FormatChars]{\chapter}. In \format[FormatChars]{\title}, \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} ed. (\format[FormatChars]{\publisher}), pp. \format[FormatPagesForHTML]{\pages}.
+inbook=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
 
-incollection=\format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format[FormatChars]{\title}. In \format[FormatChars]{\booktitle}, \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} ed. (\format[FormatChars]{\publisher}), pp. \format[FormatPagesForHTML]{\pages}.
+incollection=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
 
-thesis=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format{\title}.\begin{type} \format{\type}.\end{type}\begin{institution} (\institution).\end{institution}
+inproceedings=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher} {\address})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
 
-techreport=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format{\title}. \format{\type} \format{\number}. (\format{\institution}).
+thesis=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\year\uniq).\begin{title} \format[FormatChars]{\title}.\end{title}\begin{type} \format{\type}.\end{type}\begin{institution} (\institution).\end{institution}
 
-misc=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format{\title}. (\format{\howpublished}) \format{\url}
+techreport=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \format{\type} \format{\number}. (\format{\institution}).
 
-inproceedings=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format[FormatChars]{\title}. In \format[FormatChars]{\booktitle}, \format[AuthorLastFirstAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\editor} ed. (\format[FormatChars]{\publisher} {\address}), pp. \format[FormatPagesForHTML]{\pages}.
+misc=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} (\format{\howpublished}) \format{\url}
 
-manual=\format[AuthorLastFirstAbbreviator,AuthorAndsCommaReplacer]{\author} (\format[FormatChars]{\year}\uniq). \title. \Note. \Url.
 
-techreport=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format{\title}. \begin{Note} \format{\Note}. \end{Note}\begin{number} \format{\number}. \end{number}\begin{institution} (\format{\institution}). \end{institution}\end{}\begin{Url} \Url \end{Url}
+manual=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\format[FormatChars]{\year}\uniq). \title. \Note. \Url.
 
-electronic=\format[AuthorAbbreviator,NoSpaceBetweenAbbreviations,AuthorAndsCommaReplacer,Replace( &,\,)]{\author} (\year\uniq). \format{\title}. \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{url} \url\end{url}
+techreport=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{Note} \format{\Note}. \end{Note}\begin{number} \format{\number}. \end{number}\begin{institution} (\format{\institution}). \end{institution}\end{}\begin{Url} \Url \end{Url}
 
+electronic=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{url} \url\end{url}
+
+software=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{note} \note \end{note}\begin{url}\url\end{url}
