@@ -1,0 +1,72 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+# Written by R. J. Daniels
+# Base on instructions from here : https://www.cell.com/ajhg/authors
+
+## Issues remaining
+# organisation names should not be treated as author name
+
+NAME
+AmJHumanGen Author-year citation
+
+JOURNALS
+Am. J. Human Gen.
+
+PROPERTIES
+Title=References
+IsSortByPosition=true
+IsNumberEntries=true
+ReferenceParagraphFormat="Standard"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField=author/editor
+YearField=year
+MaxAuthors=3
+MaxAuthorsFirst=10
+AuthorSeparator=, 
+AuthorLastSeparator=, 
+EtAlString=' et al.'
+YearSeparator=, 
+InTextYearSeparator= 
+BracketBefore=(
+BracketAfter=)
+BracketBeforeInList=""
+BracketAfterInList=". "
+CitationSeparator=; 
+UniquefierSeparator=,
+GroupedNumbersSeparator=-
+MinimumGroupingCount=3
+FormatCitations=false
+ItalicCitations=false
+BoldCitations=false
+SuperscriptCitations=false
+SubscriptCitations=false
+
+
+LAYOUT
+default=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title}\begin{journal} \format[JournalAbbreviator]{\journal}\end{journal} <i>\format[FormatChars]{\volume}</i>\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+article=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\format[FormatChars]{\year}\uniq). \begin{title}\format[FormatChars]{\title}.\end{title}\begin{journal} \format[JournalAbbreviator]{\journal}\end{journal} <i>\format[FormatChars]{\volume}</i>\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+book=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}\begin{editor}\format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}(\year\uniq).\begin{title} \format[FormatChars]{\title} \end{title}(\format[FormatChars]{\publisher}).
+
+inbook=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+incollection=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+inproceedings=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} In \format[FormatChars]{\booktitle},\begin{editor} \format[NoSpaceBetweenAbbreviations,FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10)]{\editor} \format[IfPlural(eds.,ed.)]{\editor}\end{editor}\begin{publisher} (\format[FormatChars]{\publisher} {\address})\end{publisher}\begin{pages}, pp. \format[FormatPagesForHTML]{\pages}\end{pages}.
+
+thesis=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\year\uniq).\begin{title} \format[FormatChars]{\title}.\end{title}\begin{type} \format{\type}.\end{type}\begin{institution} (\institution).\end{institution}
+
+techreport=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \format{\type} \format{\number}. (\format{\institution}).
+
+misc=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} (\format{\howpublished}) \format{\url}
+
+
+manual=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author} \end{author}(\format[FormatChars]{\year}\uniq). \title. \Note. \Url.
+
+techreport=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{Note} \format{\Note}. \end{Note}\begin{number} \format{\number}. \end{number}\begin{institution} (\format{\institution}). \end{institution}\end{}\begin{Url} \Url \end{Url}
+
+electronic=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{url} \url\end{url}
+
+software=\begin{author}\format[FormatChars,Authors(LastFirst,sep=\, ,LastSep= and ,EtAl= et al.,10,10),NoSpaceBetweenAbbreviations]{\author}\end{author}\begin{year} (\year\uniq).\end{year}\begin{!year} (\format[HTMLChars]{no year}).\end{!year}\begin{title} \format[FormatChars]{\title}.\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{note} \note \end{note}\begin{url}\url\end{url}
