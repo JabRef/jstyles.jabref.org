@@ -38,6 +38,7 @@ The custom export format of JabRef is an alternative to the [Citation Style Lang
   * [Turabian (English)](#turabian-english)
   * [Vancouver Style (Deutsch)](#vancouver-style-deutsch)
   * [Vancouver Style (English)](#vancouver-style-english)
+  * [Condensed Style (English)](#condensed)
 - [Example Styles](#example-styles)
   * [Example style file](#example-style-file)
   * ["Thesis", example style with numbered citations](#thesis-example-style-with-numbered-citations)
@@ -166,6 +167,14 @@ Vancouver style as described here: https://guides.lib.monash.edu/ld.php?content_
 
 - Author: Eike Kühn
 - File: [Vancouver_English.jstyle](Vancouver_English.jstyle)
+
+### Condensed Style (English)
+
+For grant proposals.
+
+- Author: Adam Wysokiński
+- File: [condensed.jstyle](condensed.jstyle)
+- ![preview](condensed.png)
 
 ## Example Styles
 

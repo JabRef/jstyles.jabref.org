@@ -1,0 +1,48 @@
+NAME
+Condensed Style (English)
+
+PROPERTIES
+Title="References"
+IsSortByPosition="true"
+IsNumberEntries="true"
+ReferenceParagraphFormat="Text body"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField="author/editor"
+AuthorLastSeparator=", "
+AuthorLastSeparatorInText=""
+AuthorSeparator=", "
+BracketAfter="]"
+BracketAfterInList=". "
+BracketBefore="["
+BracketBeforeInList=""
+CitationCharacterFormat="Default Style"
+CitationSeparator=", "
+EtAlString="et al."
+FormatCitations="false"
+GroupedNumbersSeparator="-"
+InTextYearSeparator=" "
+ItalicEtAl="false"
+MaxAuthors=1
+MaxAuthorsFirst=1
+MinimumGroupingCount="3"
+MultiCiteChronological="true"
+PageInfoSeparator="; "
+UniquefierSeparator=","
+YearField="year"
+YearSeparator=" "
+
+LAYOUT
+
+techreport=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} p.\end{pages}\begin{edition}\edition. edition.\end{edition}\begin{url} Available from: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+book=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{edition}\edition. edition. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} \format[LastPage]{\pages} p.\end{pages}\begin{url} Available from: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+inbook=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author} In: \begin{editor}\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\editor}, editors. \end{editor}\format[Replace(\.$,)]{\title}. \begin{edition}\edition. edition. \end{edition}\begin{address}\address: \end{address}\begin{publisher}\publisher; \end{publisher}\begin{year}\year\end{year}.\begin{pages} p. \format[FormatPagesForHTML]{\pages}.\end{pages}\begin{chapter} chap. \format[FormatPagesForHTML]{\chapter}.\end{chapter}\begin{url} Available from: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+mastersthesis=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{school}\school; \end{school}\begin{year}\year\end{year}.\begin{url} Available from: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+phdthesis=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc]{\author}: \format[Replace(\.$,)]{\title}. \begin{address}\address: \end{address}\begin{school}\school; \end{school}\begin{year}\year\end{year}.\begin{url} Available from: \url\end{url}\begin{doi} DOI: \doi\end{doi}
+
+default=\format[Authors(LastFirst,Comma,InitialsNoSpace,NoPunc,1,1]{\author} (\begin{year}\year\end{year}) <b>\begin{journal}\journal\end{journal}</b>.
